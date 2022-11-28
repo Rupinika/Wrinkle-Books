@@ -6,6 +6,8 @@ import Cards from './components/Cards';
 import Horizontal from './components/Horizontal';
 
 import React, { useState } from 'react';
+import Category from './components/Category';
+import Home from './components/Home';
 
 
 function App() {
@@ -34,7 +36,7 @@ function App() {
   return (
     <>
       <Navbar theme={theme} changeTheme={changeTheme} />
-      <Carousel />
+      <Home />
       <div className="container">
         <div className="row">
           <div className="col">
@@ -48,6 +50,7 @@ function App() {
           </div>
         </div>
       </div>
+  
       <div className="container">
         {type.map((element, index) => {
           return <Horizontal theme={theme} heading={element.type} para="Here you can find " img="https://s2982.pcdn.co/wp-content/uploads/2020/01/They-All-Fall-Down-by-Rachel-Howzell-Hall.jpg.optimal.jpg" />
